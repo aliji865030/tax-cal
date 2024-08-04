@@ -1,21 +1,13 @@
-import './App.css'
-import GetStartedCard from './components/GetStartedCard/GetStartedCard'
-import NavBar from './components/NavBar/NavBar'
-import TaxCalculatorCard from './components/TaxCalculatorCard/TaxCalculatorCard'
+import React from 'react';
+import TaxCalculator from './components/TaxCalculator';
+import './styles.css';
 
 function App() {
-
   return (
-   <div className='app'>
-    <div className="app-nav">
-    <NavBar/>
+    <div className="App">
+      <TaxCalculator />
     </div>
-    <div className="ap-hero">
-    <TaxCalculatorCard/>
-    <GetStartedCard/>
-    </div>
-   </div>
-  )
+  );
 }
 
-export default App
+export default App;
